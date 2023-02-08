@@ -1,0 +1,470 @@
+/* Common CSS Begins */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1080px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcf5eb;
+}
+.db{
+    content: "";
+    color: #1c1e21;
+    background-color: #25d366;
+    padding: 16px 28px;
+    font-size: 16px;
+    border: 1px solid #1c1e21;
+    border-radius: 35px;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+}
+.db::after{
+    content: "";
+    position: absolute;
+    background-color: #1c1e21 !important;
+    height: 70px !important;
+    width: 100% !important;
+    border-radius: 50%;
+    top: 100%;
+    bottom: auto;
+    z-index: -1;
+    transition: 0.8s;
+    left: 0;
+}
+.db:hover{
+    color: #fcf5eb;
+}
+.db:hover::after{
+    top: 0;
+    transform: scale(1.3);
+}
+.image{
+    padding: 0 50px;
+}
+/* Common CSS Finish */
+/* Nav Bar Begun */
+nav{
+    padding: 30px 50px 50px 50px;
+}
+nav .logo,
+nav .menu,
+nav .downButtonGrp{
+    width: 33.3333%;
+}
+nav .menu ul li,
+nav .downButtonGrp ul li{
+    display: inline-block;
+}
+nav .logo img{
+    width: 120px;
+}
+.container .com ul li a,
+.container .feel ul li a,
+.container .grouptext ul li a,
+.container .encrypt ul li a,
+.container .meeting ul li a,
+nav .downButtonGrp ul li a,
+nav .menu ul li a{
+    color: #1c1e21;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 10px;
+    position: relative;
+    display: block;
+}
+.container .com ul li a::after,
+.container .feel ul li a::after,
+.container .grouptext ul li a::after,
+.container .encrypt ul li a::after,
+.container .meeting ul li a::after,
+nav .downButtonGrp ul li a::after,
+nav .menu ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #25d366;
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+    transition: 0.8s;
+}
+.container .com ul li:hover a::after,
+.container .feel ul li:hover a::after,
+.container .grouptext ul li:hover a::after,
+.container .encrypt ul li:hover a::after,
+.container .meeting ul li:hover a::after,
+nav .downButtonGrp ul li:hover a::after,
+nav .menu ul li:hover a::after{
+    width: 100%;
+}
+nav .downButtonGrp ul li{
+    text-align: right;
+}
+nav .downButtonGrp ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav .menu{
+    padding: 20px;
+}
+/* Nav Bar Finished */
+/* Banner Part Starts */
+#banner{
+    background-image: url(../Imgs/Banner.png);
+    height: 600px;
+    width: 100%;
+    margin: 10px auto 20px auto;
+    border-radius: 30px;
+    background-size: cover;
+    position: relative; 
+}
+#banner .row{
+    align-items: center;
+    height: 600px;
+    padding: 20px;
+}
+.content{
+    width: 30%;
+    color: #ffffff;
+}
+.content h3{
+    font-size: 60px;
+}
+.content p{
+    font-size: 20px;
+    margin: 10px;
+}
+.downButtonGrp .db span ,
+.content .db span{
+    padding: 10px;
+}
+.floating{
+    position: absolute;
+}
+.banwish{
+    top: 150px;
+    right: 300px;
+    /* width: 100px; */
+}
+.banct{
+    top: 200px;
+    right: 400px;
+    width: 250px;
+}
+.banvr{
+    top: 280px;
+    right: 450px;
+    width: 280px;
+}
+.banselfie{
+    top: 330px;
+    right: 480px;
+    width: 250px;
+}
+.bantext{
+    top: 480px;
+    right: 400px;
+    width: 350px;
+}
+#banner .show::after{
+    content: "";
+    background-color: #ffffff !important;
+}
+#banner .show:hover{
+    color: #1c1e21;
+}
+/* Banner Part Finished */
+/* Chatting Part Started */
+#chatting{
+    background-color: #fcf5eb;
+    height: auto;
+    padding: 10px;
+}
+.text{
+    padding: 30px;
+}
+.textim img{
+    width: 100%;
+}
+.textType{
+    font-size: 50px;
+    text-align:center;
+}    
+/* Chatting Part Finished */
+/* Conference Part Bismillah */
+#conference{
+    margin: 0 60px;
+}
+.meeting{
+    width: 40%;
+    text-align: left;
+}
+.meeting h2{
+    font-size: 50px;
+    font-weight: lighter;
+    display: block;
+}
+.meeting a{
+    width: 120px;
+}
+.meeting p{
+    font-size: 20px;
+    font-weight: 200;
+}
+/* Conference Part Alhamdulillah */
+/* Text Encryption Part Bismillah */
+#encryption{
+    background-color: #111b21;
+    width: 100%;
+    height: 800px;
+    padding: 100px 0 700px 0;
+}
+.encrypt a{
+    width: 120px;
+    color: #25d366 !important;
+}
+.encrypt{
+    width: 40%;
+    padding: 0 20px;
+}
+.encrypt h1{
+    width: 20%;
+    font-size: 50px;
+    font-weight: lighter;
+    color: #fcf5eb;
+}
+.encrypt h1 span{
+    color: #25d366;
+}
+.encrypt p{
+    font-size: 20px;
+    font-weight: 200;
+    color: #fcf5eb;
+}
+/* Text Encryption Part Alhamdulillah */
+/* Grouping Part Bismllah */
+#gruping{
+    background-color: #fcf5eb;
+    width: 100%;
+    height: 800px;
+}
+#grouping .image{
+    position: relative;
+}
+.grouptext{
+    width: 40%;
+    margin: 0 60px;
+    padding: 0 20px;
+}
+.grouptext h1{
+    font-weight: lighter;
+    font-size: 50px;
+    margin: 20px 0;
+}
+.grouptext a{
+    width: 120px;
+}
+.bgchat{
+    width: 300px;
+    height: 700px;
+}
+.chatgrp{
+    width: 400px;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+}
+/* Grouping Part Alhamdulillah */
+/* Feeling Part Bismillah */
+#feelings{
+    padding: 50px 0 350px 0;
+}
+.feel{
+    width: 40%;
+    text-align: left;
+    padding: 50px;
+}
+.feel a{
+    width: 120px;
+    padding: 20px 0 0 0;
+}
+.feel h1{
+    margin: 20px 0;
+    font-weight: lighter;
+    font-size: 50px;
+}
+.image .teeth{
+    position: absolute;
+}
+.image .emoji{
+    position: relative;
+    width: 300px;
+    left: 0;
+    top: 200px;
+}
+/* Feeling Part Alhamdulillah */
+/* Business Part Bismillah */
+.com{
+    width: 40%;
+    text-align: left;
+}
+.com a{
+    width: 120px;
+    padding: 20px 0 0 0;
+}
+.com h1{
+    font-weight: lighter;
+    font-size: 50px;
+    margin: 20px 0;
+}
+#business img{
+    position: relative;
+    padding-left: 100px;
+}
+/* Business Part Alhamdulillah */
+/* Connecting Part Bismillah */
+#connecting{
+    background-color: #e6ffda;
+    padding: 30px 0;
+    border-bottom: 55px;
+}
+#connecting .connect .db{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+#connecting .connect a{
+    padding: 17px;
+    border-radius: 50%;
+    background-color: #e6ffda;
+}
+#connecting .connect{
+    width: 50%;
+    height: 400px;
+    padding-right: 120px;
+}
+#connecting .connect h1{
+    font-weight: lighter;
+    padding-bottom: 300px;
+}
+#connecting .proxy .more{
+    background-color: #ffffff;
+    margin: 50px 0;
+}
+.proxy{
+    height: 400px;
+    width: 500px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 32px;
+    align-content: center;
+}
+#connecting .proxy .logo{
+    font-size: 20px;
+}
+#connecting .proxy h3{
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 15px 0;
+}
+#connecting .proxy p{
+    font-size: 16px;
+}
+/* Connecting Part Alhamdulillah */
+/* Ending Description Part Bismillah */
+.applink{
+    height: auto;
+    padding: 20px 0;
+    width: 20%;
+}
+#description{
+    background-color: #111b21;
+    padding: 100px 0 20px 0;
+}
+.applink img{
+    padding-bottom: 150px;
+}
+.links{
+    width: 200px;
+    font-size: 20px;
+    line-height: 50px;
+}
+.links p ,
+.links a{
+    text-decoration: none;
+    color: #e6ffda;
+}
+.links p{
+    font-size: 12px;
+}
+.links ul li:hover{
+    text-decoration: underline;
+}
+.applink .db::after{
+    background-color: #ffffff !important;
+}
+.applink .db:hover{
+    color: #1c1e21;
+}
+/* Ending Description Part Alhamdulillah */
+/* Copyright Part Bismillah */
+#copyright{
+    padding: 50px 0;
+    background-color: #111b21;
+}
+#copyright .container{
+    border-top: 1px solid #ffffff;
+    padding-top: 50px;
+}
+.copy{
+    color: #ffffff;
+    width: 20%;
+}
+.social_media{
+    width: 30%;
+}
+.social_media .db{
+    padding: 15px;
+    font-size: 20px;
+    border: 1px solid #fcf5eb;
+    border-radius: 50%;
+    color: #fcf5eb !important;
+    background-color: #1c1e21;
+}
+.social_media .db::after{
+    content: "";
+    position: absolute;
+    background-color: #25d366 !important;
+    z-index: -1;
+    color: #ffffff;
+}
+select{
+    background: transparent;
+    color: #fcf5eb;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+/* Copyright Part Alhamdulillah */
